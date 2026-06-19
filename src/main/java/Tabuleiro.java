@@ -10,9 +10,13 @@ public class Tabuleiro {
         mostrar();
     }
     public void colocarPecas(){
-        new Rei(); new Rainha(); new Torre(); new Torre();
-        new Bispo(); new Bispo(); new Cavalo(); new Cavalo();
-        for(int i=0;i<8;i++) new Peao();
+        new Rei("K1b"); new Rainha("Q1b"); new Torre("T1b"); new Torre("T2p");
+        new Bispo("B1b"); new Bispo("B2p"); new Cavalo("H1b"); new Cavalo("H2p");
+        for(int i=0;i<8;i++) new Peao("P"+ (i+1) + "b");
+
+        new Rei("K1p"); new Rainha("Q1p"); new Torre("T1p"); new Torre("T2b");
+        new Bispo("B1p"); new Bispo("B2b"); new Cavalo("H1p"); new Cavalo("H2b");
+        for(int i=0;i<8;i++) new Peao("P" + (i+1) + "p");
     }
     public void mostrar(){
         for(int i=0;i<8;i++){
